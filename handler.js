@@ -1,4 +1,4 @@
-exports.list_ids = (event, context, callback) => {
+exports.list_ids = async (event, context, callback) => {
     console.log("list ids");
     let response = {
         statusCode: 200,
@@ -13,7 +13,7 @@ exports.list_ids = (event, context, callback) => {
     return response;
 };
 
-exports.create_ids = (event, context, callback) => {
+exports.create_ids = async (event, context, callback) => {
     console.log("create ids");
     let response = {
         statusCode: 200,
@@ -28,7 +28,7 @@ exports.create_ids = (event, context, callback) => {
     return response;
 };
 
-exports.get_ids = (event, context, callback) => {
+exports.get_ids = async (event, context, callback) => {
     console.log("get ids");
     let response = {
         statusCode: 200,
@@ -43,7 +43,7 @@ exports.get_ids = (event, context, callback) => {
     return response;
 };
 
-exports.delete_ids = (event, context, callback) => {
+exports.delete_ids = async (event, context, callback) => {
     console.log("delete ids");
     let response = {
         statusCode: 200,
@@ -58,7 +58,7 @@ exports.delete_ids = (event, context, callback) => {
     return response;
 };
 
-exports.update_ids = (event, context, callback) => {
+exports.update_ids = async (event, context, callback) => {
     console.log("update ids");
     let response = {
         statusCode: 200,
