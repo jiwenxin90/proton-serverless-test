@@ -13,6 +13,21 @@ exports.list_ids = async (event, context, callback) => {
     return response;
 };
 
+exports.list_tasks = async (event, context, callback) => {
+    console.log("list ids");
+    let response = {
+        statusCode: 200,
+        headers: {
+            "x-custom-header" : "my custom header value"
+        },
+        body: JSON.stringify({
+            value: 11
+        })
+    };
+    console.log("response: " + JSON.stringify(response))
+    return response;
+};
+
 exports.create_ids = async (event, context, callback) => {
     console.log("create ids");
     let response = {
