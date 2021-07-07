@@ -6,7 +6,7 @@ exports.list_ids = async (event, context, callback) => {
             "x-custom-header" : "my custom header value"
         },
         body: JSON.stringify({
-            value: 11
+            value: 111
         })
     };
     console.log("response: " + JSON.stringify(response))
