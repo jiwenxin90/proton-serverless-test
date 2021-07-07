@@ -6,7 +6,7 @@ exports.list_ids = async (event, context, callback) => {
             "x-custom-header" : "my custom header value"
         },
         body: JSON.stringify({
-            value: 1
+            value: 11
         })
     };
     console.log("response: " + JSON.stringify(response))
@@ -21,7 +21,7 @@ exports.create_ids = async (event, context, callback) => {
             "x-custom-header" : "my custom header value"
         },
         body: JSON.stringify({
-            value: 2
+            value: 12
         })
     };
     console.log("response: " + JSON.stringify(response))
@@ -36,7 +36,7 @@ exports.get_ids = async (event, context, callback) => {
             "x-custom-header" : "my custom header value"
         },
         body: JSON.stringify({
-            value: 3
+            value: 13
         })
     };
     console.log("response: " + JSON.stringify(response))
@@ -51,7 +51,7 @@ exports.delete_ids = async (event, context, callback) => {
             "x-custom-header" : "my custom header value"
         },
         body: JSON.stringify({
-            value: 4
+            value: 14
         })
     };
     console.log("response: " + JSON.stringify(response))
@@ -66,7 +66,7 @@ exports.update_ids = async (event, context, callback) => {
             "x-custom-header" : "my custom header value"
         },
         body: JSON.stringify({
-            value: 5
+            value: 15
         })
     };
     console.log("response: " + JSON.stringify(response))
